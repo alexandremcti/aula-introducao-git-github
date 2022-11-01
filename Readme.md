@@ -415,3 +415,13 @@ Agora vamos realizar uma mudança em index.html
 
 Agora vamos commitar nossa mudança
 
+```
+$ git add .
+$ git commit -m "adicionando o footer"
+```
+
+Agora vamos subir a nossa mudança no github
+
+```
+$ git push origin development
+```
