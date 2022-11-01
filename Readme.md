@@ -389,12 +389,12 @@ Uma branch é uma ramificação. Quando criamos uma nova branch nós queremos se
 Então vamos primeiramente fazer criar uma nova branch com o seguinte comando:
 
 ```
-$ git branch development
+$ git branch develop
 ```
 e depois vamos entrar nessa nova branch com o comando:
 
 ```
-$ git checkout development
+$ git checkout develop
 ```
 
 Agora vamos realizar uma mudança em index.html
@@ -423,5 +423,40 @@ $ git commit -m "adicionando o footer"
 Agora vamos subir a nossa mudança no github
 
 ```
-$ git push origin development
+$ git push origin develop
+```
+
+feito! Agora quem está trabalhando na branch main precisa realizar uma atualização para ver as novas mudanças. Para isso iremos realizar o comando:
+
+```
+$ git pull origin main
+
+$ git pull origin main
+warning: redirecting to https://github.com/alexandremcti/aula-introducao-git-github.git/
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 5), reused 7 (delta 5), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From http://github.com/alexandremcti/aula-introducao-git-github
+ * branch            main       -> FETCH_HEAD
+   8bb784c..5b79399  main       -> origin/main
+Updating 8bb784c..5b79399
+Fast-forward
+ Readme.md  | 30 ++++++++++++++++++++++++++++++
+ index.html |  3 +++
+ 2 files changed, 33 insertions(+)
+```
+
+Pronto. Agora nós aprendemos a trabalhar em time.
+
+Mas e quando tivermos conflito de código? lembra que o git ajuda o time nessas situações? 
+Vamos simular esse cenário.
+
+Primeiro nós vamos realizar uma mudança na branch develop e vamos commitar a mudança:
+
+```
+    <header>
+        <h1>Quem é Miro Games</h1>
+    </header>
 ```
