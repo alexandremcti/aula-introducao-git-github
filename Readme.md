@@ -460,3 +460,15 @@ Primeiro nós vamos realizar uma mudança na branch develop e vamos commitar a m
         <h1>Quem é Miro Games</h1>
     </header>
 ```
+
+agora vamos mudar para a branch main e realizar uma mudança
+
+```
+    <div id=""header>
+        <h1>Quem é Miro Games</h1>
+    </header>
+```
+
+Depois vamos rastrear e commitar a mudança e retornar para develop
+
+Uma vez na branch develop precisamos atualizar com as mudanças na main para receber as ultimas alterações antes de subir nosso código. `git pull origin main`
