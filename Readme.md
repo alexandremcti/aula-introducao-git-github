@@ -391,7 +391,37 @@ Então vamos primeiramente fazer criar uma nova branch com o seguinte comando:
 ```
 $ git branch development
 ```
+e depois vamos entrar nessa nova branch com o comando:
+
+```
+$ git checkout development
+```
 
 Agora vamos realizar uma mudança em index.html
 
+```
+<body>
+    <h1>Quem é Miro Games</h1>
+    <ul>
+        <li>Playstation 5</li>
+        <li>XBox</li>
+        <li>Nitendo Switch</li>
+    </ul>
+    <footer>
+        <p>Miro S.A</p>
+    </footer>
+</body>
+```
 
+Agora vamos commitar nossa mudança
+
+```
+$ git add .
+$ git commit -m "adicionando o footer"
+```
+
+Agora vamos subir a nossa mudança no github
+
+```
+$ git push origin development
+```
