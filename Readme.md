@@ -378,12 +378,20 @@ $ ssh-keygen
 Vamos apertar apenas enter e será gerada uma chave na pasta .ssh. Depois nós vamos usar o comando `cat id_rsa.pub`. Vamos copiar o que foi exibido e entrar em settings >> SSH e GPG e criar uma nova chava passando o que acabamos de cópiar. Pronto, agora está tudo pronto para avançarmos.
 
 Vamos entrar na pasta que acabamos de clonar e abrir o git bash. Utilizando `ls -a` podemos ver o conteúdo da pasta
-Agora estamos na branch principal e podemos ver o que acabamos de subir. Se uxecutarmos `git log`
+Agora estamos na branch principal e podemos ver o que acabamos de subir. Se uxecutarmos `git log` 
 
 ## Trabalhando com branchs
 
 Agora vamos simular como seria trabalhar em um time de desenvolvimento. Vamos criar uma branch para criar uma nova funcionalidade.
 
-Nós vamos 
+Uma branch é uma ramificação. Quando criamos uma nova branch nós queremos separar o que será criado aqui da branch da raiz.
+
+Então vamos primeiramente fazer criar uma nova branch com o seguinte comando:
+
+```
+$ git branch development
+```
+
+Agora vamos realizar uma mudança em index.html
 
 
